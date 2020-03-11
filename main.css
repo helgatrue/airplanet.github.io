@@ -1,0 +1,499 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 31px;
+    color: #f4f4f4;
+    opacity: 0.25;
+}
+
+.header {
+    background-color: #4a74b5;
+    margin-bottom: 42px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1040px;
+}
+
+.header__container {
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts {
+    color: white;
+    font-style: normal;
+}
+
+.contacts__phone {
+    font-size: 21px;
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+} 
+
+.dropdown {
+    position: relative;
+    display: inline-flex;
+}
+
+.dropdown__link {
+    font-style: 14px;
+    font-weight: bold;
+    opacity: .7;
+    color: white;
+} 
+
+.dropdown__link:hover {
+    color: white;
+    opacity: 1;
+}
+
+.dropdown:hover {
+    color: white;
+}
+
+.dropdown__list {
+    display: inline-block;
+    margin: auto;
+}
+
+.dropdown__item {
+    color: #3a5bbf;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 5px auto;
+    
+}
+
+.dropdown__item:last-child {
+    color: black;
+    font-weight: normal;
+}
+
+.dropdown:hover .dropdown__menu {
+    left: 0;
+    opacity: 1;
+}
+
+.dropdown__menu {
+    position: absolute;
+    width: 163px;
+    height: 80px;
+    top: 100%;
+    border-radius: 3px;
+    filter: drop-shadow(2.5px 4.33px 2.5px rgba(0,0,0,0.2));
+    background: white;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity .4s;
+    left: -9999px;
+    display: flex;
+}
+
+.dropdown__menu:before {
+    position: absolute;
+    border: 24px solid transparent;
+    display: block;
+    width: 1.5px;
+    height: 1.5px;
+    background-color: transparent;
+    border-bottom-color: white;
+    border-top-width: 0;
+    bottom: 100%;
+    top: -24px;
+    right: 0;
+    content: '';
+}
+
+.cover {
+    position: absolute;
+    overflow: hidden;
+  }
+
+.circle {
+    width: 68px;
+    height: 68px;
+    border-radius: 34px;
+    background-color: #5972b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle__social {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle__social:hover {
+    background-color: white;
+}
+
+.circle__social-vk {
+    background-color: #d4ddf2;
+}
+
+.circle__social-fb {
+    background-color: #d4ddf2;
+}
+
+.circle__social-twitter {
+    background-color: #d4ddf2;
+}
+
+.circle__social-mail {
+    background-color: #d4ddf2;
+}
+
+.page-content__container {
+    display: flex;
+}
+
+.main-content {
+    width: 100%;
+  }
+  
+.sidebar {
+    width: 18%;
+    margin-top: 30px;
+  }
+
+.nav__link:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 18px;
+    margin-right: 17px;
+    background: center center / contain no-repeat;
+  }
+
+.nav__link {
+    font-size: 12px;
+    font-weight: bold;
+    color: #5973b1;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: flex;
+}
+
+.nav__link:hover {
+    color: black;
+  }
+
+  .nav__item--active .nav__link {
+    color: black;
+  }
+
+.nav__item {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.nav__item:last-child {
+    margin-bottom: 0; 
+}
+
+.nav__list ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav__link--icon--direction:before {
+    background-image: url(img/icons/main_icon.png);
+}
+
+.nav__link--icon--plain:before {
+    background-image: url(img/icons/feed_icon.png);
+}
+
+.nav__link--icon--feed:before {
+    background-image: url(img/icons/team_icon.png);
+}
+
+.nav__link--icon--direction:hover:before {
+    background-image: url(img/icons/main_icon-hover.png);
+}
+
+.nav__link--icon--plain:hover:before {
+    background-image: url(img/icons/feed_icon-hover.png);
+}
+
+.nav__link--icon--feed:hover:before{
+    background-image: url(img/icons/team_icon-hover.png);
+}
+
+.nav__item--active .nav__link--icon--direction:before {
+    background-image: url(img/icons/main_icon-hover.png); 
+}
+
+.nav__item--active .nav__link--icon--plain:before {
+    background-image: url(img/icons/feed_icon-hover.png);
+}
+
+.nav__item--active .nav__link--icon--feed:before {
+    background-image: url(img/icons/team_icon-hover.png);
+}
+
+.tariff__items {
+    display: inline-flex;
+    font-weight: 300;
+}
+
+.tariffs__items--title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #262626;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.tariff__items--text {
+    font-size: 18px;
+    color: #262424;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.tariff__items--standard, .tariff__items--premium, .tariff__items--luxury {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 30px;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center; 
+    font-size: 18px;
+    border: 1px solid transparent;
+}
+
+.tariff__items--standard:hover, .tariff__items--premium:hover, .tariff__items--luxury:hover {
+    border: 1px solid #e8e8ec;
+}
+
+
+.tariff__items--premium {
+    width: 300px;
+    height: 456px;
+    border-radius: 5px;
+}
+
+.tariff__standard li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;  
+} 
+
+.tariff__standard li:last-child {
+    margin-bottom: 0;
+}
+
+.tariff__standard li:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 15px;
+}
+.title {
+    font-size: 49px;
+}
+
+.news {
+    margin-top: 109px;
+}
+
+.news__title {
+    margin-bottom: 73px;
+    font-size: 49px;
+} 
+
+.news__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.news__date {
+    opacity: .7;
+}
+
+.news__item {
+    display: flex;
+}
+
+.news__avatar {
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.avatar {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 180px;
+    max-height: 180px;
+    display: flex;
+}
+
+.news__desc {
+    width: 65%;
+}
+
+.news__text {
+    font-weight: 300;
+    color: black;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+.price:before {
+    content: '$';
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 65px;
+    margin-bottom: 67px;
+}
+
+.pagination__display {
+    margin-right: 30px;
+    color: #656464;
+}
+
+.pagination__link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+.pagination__link--active {
+    color: white;
+    background-color: #5972b1;
+}
+
+.pagination__link--active:hover  {
+    color: white !important;
+}
+
+.pagination__list {
+    display: flex;
+}
+
+.pagination__link:hover {
+    color: #5972b1;
+}
+
+.pagination__item:last-child {
+    margin-right: 0;
+}
+
+.footer {
+    background-color: #4a74b5;
+    height: 78px;
+    display: flex;
+}
+
+.footer__a {
+    color: white;
+}
+
+.footer__title {
+    margin: 0;
+    color: white;
+    text-transform: none;
+    max-width: 300px;
+    font-weight: 700;
+}
+
+.footer__text {
+    color: white;
+    max-width: 267px;
+}
+
+.footer__social-nets {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__social-nets h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.footer__social-nets-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.breadcrumbs__link {
+    text-decoration: none;
+}
+
+.breadcrumbs__link a:visited {
+    color: black;
+}
+
+.route__desc-img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.container__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
